@@ -1,0 +1,52 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-card {
+  max-width: 700px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.skills-title {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.skill-item {
+  padding: 8px 12px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-right: 8px;
+}
