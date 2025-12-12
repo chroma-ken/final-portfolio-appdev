@@ -1,0 +1,99 @@
+<div class="container mt-4">
+
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <input 
+        type="text" 
+        class="form-control"
+        placeholder="Search project..."
+        [(ngModel)]="searchName"
+        (input)="filterCards()" 
+      >
+    </div>
+
+    <div class="col-md-4">
+      <button class="btn btn-primary w-100" (click)="filterCards()">
+        Search
+      </button>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="row">
+
+    <!-- CARD 1 -->
+    <div class="col-md-4 mb-4 project-card">
+      <div class="card shadow-sm h-100">
+        <img src="mg1.png" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Seach Engine</h5>
+          <a href="https://chroma-ken.github.io/hipolito_APPDEV1_MG_SEARCH/searchbar"
+             target="_blank"
+             class="btn btn-success w-100">
+            Visit Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-4 mb-4 project-card">
+      <div class="card shadow-sm h-100">
+        <img src="mg2.png" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Task Manager</h5>
+          <a href="https://chroma-ken.github.io/Task_Manager/"
+             target="_blank"
+             class="btn btn-success w-100">
+            Visit Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-4 mb-4 project-card">
+      <div class="card shadow-sm h-100">
+        <img src="mg3.png" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Task Manager using Angular Services</h5>
+          <a href="https://chroma-ken.github.io/UpdatedTask_Manager/?authuser=0"
+             target="_blank"
+             class="btn btn-success w-100">
+            Visit Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4 project-card">
+      <div class="card shadow-sm h-100">
+        <img src="mg4.png" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Task Manager with Advanced Features and Data Modeling</h5>
+          <a href="https://chroma-ken.github.io/Mid_Lab4/"
+             target="_blank"
+             class="btn btn-success w-100">
+            Visit Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4 project-card">
+      <div class="card shadow-sm h-100">
+        <img src="mg5.png" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Midterm Exam Weather Dashboard using WeatherStack API</h5>
+          <a href="https://chroma-ken.github.io/kenneth_appdev1_midterm_exam-/home"
+             target="_blank"
+             class="btn btn-success w-100">
+            Visit Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
