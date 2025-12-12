@@ -1,33 +1,60 @@
-<div class="container py-5">
+<div class="about-container container py-5">
+
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-lg-10 col-xl-8">
 
-      <div class="card shadow-sm">
-        <div class="card-body">
+      <section class="about-card p-4 p-md-5 shadow-sm rounded-4">
 
-          <h2 class="text-primary mb-1">{{ name }}</h2>
-          <h5 class="text-muted mb-3">{{ role }}</h5>
+        <!-- Header -->
+        <header class="text-center mb-4">
+          <img 
+            src="profile.jpg" 
+            alt="Profile photo of {{ name }}" 
+            class="profile-img mb-3"
+          />
 
-          <p class="mb-4">
-            {{ description }}
-          </p>
+          <h1 class="about-name mb-1">{{ name }}</h1>
+          <p class="about-role mb-3">{{ role }}</p>
+        </header>
 
-          <h4 class="mb-3">Skills</h4>
+        <!-- Description -->
+        <p class="about-description mb-4">
+          {{ description }}
+        </p>
 
-          <div class="d-flex flex-wrap gap-2">
-            <span 
-              *ngFor="let skill of skills" 
-              class="badge bg-secondary p-2"
-            >
+        <!-- Skills Section -->
+        <section aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title mb-3">Skills</h2>
+
+          <ul class="skills-list">
+            <li *ngFor="let skill of skills" class="skill-item">
               {{ skill }}
-            </span>
-          </div>
+            </li>
+          </ul>
+        </section>
 
-        </div>
-      </div>
+        <!-- Social Links -->
+        <section aria-labelledby="social-title" class="mt-4">
+          <h2 id="social-title" class="section-title mb-3">Links</h2>
+
+          <div class="social-links">
+            <a 
+              *ngFor="let link of socialLinks"
+              [href]="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+            >
+              <i [class]="link.icon" aria-hidden="true"></i>
+              <span>{{ link.label }}</span>
+            </a>
+          </div>
+        </section>
+
+      </section>
 
     </div>
   </div>
-<router-outlet/>
-</div>
 
+  <router-outlet></router-outlet>
+</div>

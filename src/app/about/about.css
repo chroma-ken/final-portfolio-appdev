@@ -1,52 +1,105 @@
+/* Container */
 .about-container {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
+  color: #e6e6e6;
 }
 
+/* Card */
 .about-card {
-  max-width: 700px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  background: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.name {
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* Name and Heading */
+.about-name {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 5px;
+  color: #e63946; /* red accent */
 }
 
-.role {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 20px;
+.about-role {
+  color: #b3b3b3;
+  font-size: 1.1rem;
 }
 
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e63946;
 }
 
-.skills-title {
-  margin-top: 25px;
+/* Section Titles */
+.section-title {
   font-size: 1.4rem;
   font-weight: 600;
+  color: #f1f1f1;
 }
 
+/* Description */
+.about-description {
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+/* Skills */
 .skills-list {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .skill-item {
-  padding: 8px 12px;
-  background: #f1f1f1;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  display: inline-block;
-  margin-right: 8px;
+  background: #2c2c2c;
+  border: 1px solid #3a3a3a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fafafa;
+  transition: background 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #e63946;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  
+  background: #2a2a2a;
+  border: 1px solid #3d3d3d;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-btn:hover {
+  background: #e63946;
+  transform: translateY(-3px);
+}
+
+.social-btn i {
+  font-size: 1.1rem;
 }
