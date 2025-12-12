@@ -16,11 +16,11 @@ export class About {
   role: string = 'Computer Science Student';
 
   description: string = `
-    I am a passionate and motivated student developer focused on building modern,
-    responsive, and accessible web applications. I enjoy experimenting with new 
-    tools, refining UI/UX, and creating clean, functional projects that reflect 
-    real-world use cases. My goal is to continuously grow and prepare myself for 
-    professional development roles in the tech industry.
+    Hi! I am Kenneth Dwight T. Hipolito from University of Baguio, I am passionate about developing responsive and 
+    accessible web applications. I enjoy learning and applying new things to because that's what makes us IT/CS students
+    unique. My goal is to continuously grow and prepare myself for professional career roles in the tech industry. With
+    aspiration to become either a Full-Stack Developer or Cybersecurity Analyst. I am confident in my abilities and motivated
+    to pursue a career that allows me flexibility and opportunity to achieve personal growth and success.
   `;
 
   // Skills dynamically rendered as badges
